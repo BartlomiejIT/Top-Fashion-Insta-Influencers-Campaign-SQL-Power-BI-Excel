@@ -10,9 +10,9 @@ The main goal of the project is to provide a tool that will help marketing teams
 
 ## Key Features
 
-Identification of the top 10 influencers with the largest number of followers: Allows you to quickly identify the most popular influencers.
-Top 3 influencers with the highest average engagement: Helps you find influencers who generate the most interest among their followers.
-Top 3 Influencers with the Highest Engagement Rate: Finds the influencers who have the greatest impact on their audience.
+- Identification of the top 10 influencers with the largest number of followers: Allows you to quickly identify the most popular influencers.
+- Top 3 influencers with the highest average engagement: Helps you find influencers who generate the most interest among their followers.
+- Top 3 Influencers with the Highest Engagement Rate: Finds the influencers who have the greatest impact on their audience.
 
 ## Technologies used in the project
 
