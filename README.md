@@ -16,10 +16,10 @@ The main goal of the project is to provide a tool that will help marketing teams
 
 ## Technologies used in the project
 
-- Excel: For initial data review and cleaning.
-- PostgreSQL: For more advanced data cleaning, testing and analysis.
-- Power BI: For data visualization and creating an interactive dashboard.
-- Jupyter Notebook: For creating interactive project documentation.
+- Excel: initial data review and cleaning.
+- PostgreSQL: more advanced data cleaning, testing and analysis.
+- Power BI: data visualization and creating an interactive dashboard.
+- Jupyter Notebook: creating interactive project documentation.
 
 ## Results
 
