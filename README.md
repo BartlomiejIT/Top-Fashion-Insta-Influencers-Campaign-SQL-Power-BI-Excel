@@ -16,10 +16,10 @@ Top 3 Influencers with the Highest Engagement Rate: Finds the influencers who ha
 
 ## Technologies used in the project
 
-Excel: For initial data review and cleaning.
-PostgreSQL: For more advanced data cleaning, testing, and analysis.
-Power BI: For data visualization and creating an interactive dashboard.
-Jupyter Notebook: For creating interactive project documentation.
+- Excel: For initial data review and cleaning.
+- PostgreSQL: For more advanced data cleaning, testing, and analysis.
+- Power BI: For data visualization and creating an interactive dashboard.
+- Jupyter Notebook: For creating interactive project documentation.
 
 ## How to use the project
 
