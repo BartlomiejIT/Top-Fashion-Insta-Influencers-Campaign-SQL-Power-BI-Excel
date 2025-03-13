@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This project aims to identify the most influential Instagram influencers in the categories related to fashion, lifestyle, and modeling in the United States. This analysis is crucial for effective marketing campaigns, especially when promoting high-end products. The project involves creating an interactive dashboard in Power BI that provides detailed information on the most popular influencers, including the number of followers, average engagement, and engagement rate.
+This project aims to identify the most influential Instagram influencers in the categories related to fashion, lifestyle and modeling in the United States. This analysis is crucial for effective marketing campaigns, especially when promoting high-end products. The project involves creating an interactive dashboard in Power BI that provides detailed information on the most popular influencers, including the number of followers, average engagement and engagement rate.
 
 ## Project Goal
 
@@ -17,14 +17,14 @@ Top 3 Influencers with the Highest Engagement Rate: Finds the influencers who ha
 ## Technologies used in the project
 
 - Excel: For initial data review and cleaning.
-- PostgreSQL: For more advanced data cleaning, testing, and analysis.
+- PostgreSQL: For more advanced data cleaning, testing and analysis.
 - Power BI: For data visualization and creating an interactive dashboard.
 - Jupyter Notebook: For creating interactive project documentation.
 
 ## How to use the project
 
 - Data preparation: Data was downloaded from the "Top 1000 Instagramers World Cleaned" dataset available on the Kaggle platform. Data was processed and cleaned using Excel and PostgreSQL.
-- Data analysis: Detailed data analysis was performed using Jupyter Notebook, including follower count, average engagement, and engagement rate.
+- Data analysis: Detailed data analysis was performed using Jupyter Notebook, including follower count, average engagement and engagement rate.
 - Visualization: The analysis results were visualized in Power BI, creating an interactive dashboard that allows easy viewing and filtering of data.
 
 ## Why is it worth checking out this project?
@@ -32,7 +32,7 @@ Top 3 Influencers with the Highest Engagement Rate: Finds the influencers who ha
 - Practical application: The project has direct application in marketing, helping to identify the most valuable influencers.
 - Comprehensive analysis: The project covers the entire process of data analysis, from its preparation to visualization.
 - Interactive dashboard: The dashboard in Power BI is intuitive and easy to use, which allows for quick decision-making.
-- Use of modern technologies: The project demonstrates skills in data analysis, visualization, and working with various analytical tools.
+- Use of modern technologies: The project demonstrates skills in data analysis, visualization and working with various analytical tools.
   
 ## How to start the project
 
