@@ -1,4 +1,4 @@
-# Top-Fashion-Instagram-Influencers-Campaign
+# Top-Fashion-Instagram-Influencers-Campaign (SQL - POWER BI - EXCEL)
 
 ## Project Description
 
@@ -20,6 +20,13 @@ Top 3 Influencers with the Highest Engagement Rate: Finds the influencers who ha
 - PostgreSQL: For more advanced data cleaning, testing and analysis.
 - Power BI: For data visualization and creating an interactive dashboard.
 - Jupyter Notebook: For creating interactive project documentation.
+
+## Results
+
+- Increasing the effectiveness of marketing campaigns: By analyzing and identifying the most influential influencers, marketing campaigns can be more targeted and effective.
+- Optimizing the marketing budget: Selecting influencers with the highest engagement rate allows for better use of financial resources, which translates into higher ROI (Return on Investment).
+- Automating the influencer selection process: Dashboard in Power BI allows for quick and easy data review, which significantly reduces the time needed for analysis and decision-making.
+- Improving data visualization: Creating an interactive dashboard allows for better understanding of data and easier communication of analysis results to marketing teams.
 
 ## How to use the project
 
