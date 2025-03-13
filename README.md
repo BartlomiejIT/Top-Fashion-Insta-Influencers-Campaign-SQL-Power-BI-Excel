@@ -31,7 +31,7 @@ Top 3 Influencers with the Highest Engagement Rate: Finds the influencers who ha
 
 - Practical application: The project has direct application in marketing, helping to identify the most valuable influencers.
 - Comprehensive analysis: The project covers the entire process of data analysis, from its preparation to visualization.
-- Interactive dashboard: The dashboard in Power BI is intuitive and easy to use, which allows for quick decision-making.
+- Interactive dashboard: The dashboard in Power BI is intuitive and easy to use which allows for quick decision-making.
 - Use of modern technologies: The project demonstrates skills in data analysis, visualization and working with various analytical tools.
   
 ## How to start the project
