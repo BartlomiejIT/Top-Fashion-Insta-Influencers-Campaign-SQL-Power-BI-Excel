@@ -1,4 +1,4 @@
-# Top Fashion Instagram Influencers Campaign: SQL-Power BI-Excel
+# Top Fashion Insta-Influencers Campaign: SQL-Power BI-Excel
 
 ## Table of Contents
 
@@ -6,16 +6,15 @@
 - [Data Source](#data-source)
 - [Stages](#stages)
 - [Design](#design)
-- [Mockup](#mockup)
+- [Dashboard Mockup](#dashboard-mockup)
 - [Tools](#tools)
 - [Development](#development)
   - [Pseudocode](#pseudocode)
-  - [Data Exploration](#data-exploration)
+  - [Data Exploration notes](#data-exploration-notes)
   - [Data Cleaning](#data-cleaning)
   - [Transform the Data](#transform-the-data)
   - [Create the SQL View](#create-the-sql-view)
 - [Testing](#testing)
-  - [Data Quality Tests](#data-quality-tests)
 - [Visualization](#visualization)
   - [Results](#results)
   - [DAX Measures](#dax-measures)
@@ -71,9 +70,9 @@ We need data on the top US Instagrammers in 2024 that includes their
 - Development
 - Testing
 - Analysis
+  
 
 # Design
-
 
 - What should the dashboard contain based on the requirements provided?
 
@@ -98,8 +97,9 @@ Some of the data visuals that may be appropriate in answering our questions incl
 3. Scorecards
 4. Horizontal bar chart
 
-![alt text](images/mockup-dashboard.png)
+![image](https://github.com/user-attachments/assets/8066f014-2636-4fbb-91f7-766fb760eb6b)
 
+## Tools
 
 | Tool | Purpose |
 |-----------|-----------|
@@ -126,7 +126,7 @@ Some of the data visuals that may be appropriate in answering our questions incl
 8. Write the documentation + commentary
 9. Publish the data to GitHub Pages
 
-## Data explorartin notes
+## Data Exploration notes
 
 This is the stage where you have a scan of what's in the data, errors, inconcsistencies, bugs, weird and corrupted characters etc
 
@@ -138,13 +138,13 @@ This is the stage where you have a scan of what's in the data, errors, inconcsis
 
 - Columns:
 
-name – influencer name/id
-rank – position in the ranking
-category – category or combination of categories (e.g. Music, Lifestyle, Cinema & Actors/actresses)
-followers – number of followers on Instagram
-audience_country – primary country of the audience
-authentic_engagement – ​​measure of authentic engagement
-avg_engagement – ​​average engagement (e.g. likes, comments)
+	- name – influencer name / id
+	- rank – position in the ranking
+	- category – category or combination of categories (e.g. Music, Lifestyle, Cinema & Actors/actresses)
+	- followers – number of followers on Instagram
+	- audience_country – primary country of the audience
+	- authentic_engagement – measures real, valuable interactions with real users
+	- avg_engagement – the overall average engagement, which may also include artificial or less valuable interactions
 
 2. The collection is large and appears to be merged from different sources – resulting in duplicate rows, inconsistent categories and gaps in data.
 
@@ -290,7 +290,8 @@ from
     instagrammers;
 ```
 
-![alt text](images/rows.png)
+![image](https://github.com/user-attachments/assets/32b3acd2-f136-45a4-b13d-964e605932d6)
+
 
 ## Column count check
 
@@ -306,7 +307,7 @@ where
    	and table_schema = 'public';
 ```
 
-![alt text](images/columns-and-fields.png)
+![image](https://github.com/user-attachments/assets/53ba0c17-6eae-476d-a87d-d73d18c4d603)
 
 ## Data type check
 
@@ -322,7 +323,7 @@ where
     TABLE_NAME = 'instagrammers';
 ```
 
-![alt text](images/data-types.png)
+![image](https://github.com/user-attachments/assets/bc6d8a93-d066-4f7b-b30e-2973170fe665)
 
 ## Duplicate count check
 
@@ -335,7 +336,7 @@ FROM
     instagrammers;
 ```
 
-![alt text](images/duplicates-count.png)
+![image](https://github.com/user-attachments/assets/2d97511d-f208-4283-9dfe-9bf2b94275d0)
 
 # Visualization
 
@@ -343,7 +344,7 @@ FROM
 
 - What does the dashboard look like?
 
-![alt text](images/dashboard.png)
+![image](https://github.com/user-attachments/assets/9a155e25-8227-4584-871f-5c48e835b241)
 
 This shows the Top U.S. Fashion Instagrammers in 2024 so far.
 
@@ -516,7 +517,7 @@ order by
 
 Output
 
-![alt text](images/product-placement.png)
+![image](https://github.com/user-attachments/assets/28598d2b-b281-48fe-959d-d6c8aced0fb6)
 
 ## 2. Influencers with highest average engagement.
 
@@ -596,7 +597,7 @@ order by
 
 Output
 
-![alt text](images/influencer-marketing.png)
+![image](https://github.com/user-attachments/assets/1a3b7173-691e-4480-a718-68b7d6aa1830)
 
 ## 3. Influencers with highest engagament rate. 
 
@@ -685,7 +686,7 @@ order by
 ```
 Output
 
-![alt text](images/sponsor-post-series.png)
+![image](https://github.com/user-attachments/assets/4232db56-d436-47b9-8fcc-d95ce0941294)
 
 ## Discovery
 
@@ -713,7 +714,7 @@ We discovered that
 
 4. The top channels for potential cooperation are **Zendaya** and **Kendall Jenner** for their generating engagement and profit. **Angus Cloud** for lower costs and higher returns. We may also include **Kim Kardashian** to consider a one-time product placement collaboration.
 
-## Potential ROI (Return On Investment):
+## Potential ROI:
 
 - What ROI do we expect if we take this course of action?
 
@@ -727,7 +728,7 @@ We discovered that
 - A **product placement** deal with **Kim Kardashian** could result in a net profit of **$10,125,000**, making it a good option to consider.
 
 
-### Action plan:
+## Action plan:
 
 - What course of action should we take and why?
 
