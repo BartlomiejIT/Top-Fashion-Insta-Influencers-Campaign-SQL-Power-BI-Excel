@@ -98,7 +98,7 @@ Some of the data visuals that may be appropriate in answering our questions incl
 3. Scorecards
 4. Horizontal bar chart
 
-![alt text](mockup-dashboard.png)
+![alt text](images/mockup-dashboard.png)
 
 
 | Tool | Purpose |
@@ -290,7 +290,7 @@ from
     instagrammers;
 ```
 
-![alt text](rows.png)
+![alt text](images/rows.png)
 
 ## Column count check
 
@@ -306,7 +306,7 @@ where
    	and table_schema = 'public';
 ```
 
-![alt text](columns-and-fields.png)
+![alt text](images/columns-and-fields.png)
 
 ## Data type check
 
@@ -322,7 +322,7 @@ where
     TABLE_NAME = 'instagrammers';
 ```
 
-![alt text](data-types.png)
+![alt text](images/data-types.png)
 
 ## Duplicate count check
 
@@ -335,7 +335,7 @@ FROM
     instagrammers;
 ```
 
-![alt text](duplicates-count.png)
+![alt text](images/duplicates-count.png)
 
 # Visualization
 
@@ -343,7 +343,7 @@ FROM
 
 - What does the dashboard look like?
 
-![alt text](dashboard.png)
+![alt text](images/dashboard.png)
 
 This shows the Top U.S. Fashion Instagrammers in 2024 so far.
 
@@ -516,7 +516,7 @@ order by
 
 Output
 
-![alt text](product-placement.png)
+![alt text](images/product-placement.png)
 
 ## 2. Influencers with highest average engagement.
 
@@ -596,7 +596,7 @@ order by
 
 Output
 
-![alt text](influencer-marketing.png)
+![alt text](images/influencer-marketing.png)
 
 ## 3. Influencers with highest engagament rate. 
 
@@ -685,7 +685,7 @@ order by
 ```
 Output
 
-![alt text](sponsor-post-series.png)
+![alt text](images/sponsor-post-series.png)
 
 ## Discovery
 
