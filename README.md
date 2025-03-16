@@ -292,44 +292,63 @@ from
 
 ### Output
 
-![image](https://github.com/user-attachments/assets/7999e88a-a275-4c4f-a1fa-2bae9c4ea72e)
-
+![image](https://github.com/user-attachments/assets/d8c17c28-1e11-4edf-8c5a-90ff8e26a92c)
 
 ## Column count check
 
 ```sql
 -- Count the total number of columns (or fields) are in the SQL view
 
-select
-    count(*) as column_count
-from
+SELECT
+    COUNT(*) AS column_count
+FROM
     information_schema.columns
-where
+WHERE
     table_name = 'instagrammers'
-   	and table_schema = 'public';
+    AND table_schema = 'public';
 ```
 
 ### Output
 
-![image](https://github.com/user-attachments/assets/2572ebf1-48fc-485a-a3a3-81bf31ac256c)
+![image](https://github.com/user-attachments/assets/04e4e7ee-e2e9-4ae7-b20a-67d7ae5f9cf7)
 
 ## Data type check
 
 ```sql
 -- Check the data types of each column from the view by checking the INFORMATION SCHEMA view
 
-select
-    COLUMN_NAME,
-    DATA_TYPE
-from
-    INFORMATION_SCHEMA.columns
-where
-    TABLE_NAME = 'instagrammers';
+SELECT
+    column_name,
+    data_type
+FROM
+    information_schema.columns
+WHERE
+    table_name = 'instagrammers';
+```
+
+## Output
+
+![image](https://github.com/user-attachments/assets/e1b275c5-6eb8-4ae6-85d2-df5e9c130f53)
+
+## Missing values check
+
+```sql
+-- Check missing values
+
+SELECT 
+    SUM(CASE WHEN name IS NULL OR name = '' THEN 1 ELSE 0 END) AS missing_name,
+    SUM(CASE WHEN rank IS NULL THEN 1 ELSE 0 END) AS missing_rank,
+    SUM(CASE WHEN category IS NULL OR category = '' THEN 1 ELSE 0 END) AS missing_category,
+    SUM(CASE WHEN followers IS NULL THEN 1 ELSE 0 END) AS missing_followers,
+    SUM(CASE WHEN audience_country IS NULL OR audience_country = '' THEN 1 ELSE 0 END) AS missing_audience_country,
+    SUM(CASE WHEN authentic_engagement IS NULL THEN 1 ELSE 0 END) AS missing_authentic_engagement,
+    SUM(CASE WHEN avg_engagement IS NULL THEN 1 ELSE 0 END) AS missing_avg_engagement
+FROM instagrammers;
 ```
 
 ### Output
 
-![image](https://github.com/user-attachments/assets/30331161-b09b-4fd0-a434-a3d78d14b5f4)
+![image](https://github.com/user-attachments/assets/a9ce66f0-4515-46b1-85e3-ca0ef03e7072)
 
 ## Duplicate count check
 
@@ -344,7 +363,7 @@ FROM
 
 ### Output
 
-![image](https://github.com/user-attachments/assets/b8c94806-6c75-4f43-8c5a-38e7d5f6cb9e)
+![image](https://github.com/user-attachments/assets/85567377-2ee2-41e3-9e10-6ea3f65a6524)
 
 # Visualization
 
@@ -440,7 +459,7 @@ For this analysis, we're going to focus on the questions below to get the inform
 For this analysis, we'll prioritize analysing the metrics that are important in generating the expected ROI for our marketing client, which are the Instagram profiles with the most
 
 - followers
-- authentic engagement
+- average authentic engagement
 - egagement ratio 
 
 ## Validation
@@ -523,7 +542,7 @@ order by
 
 Output
 
-![image](https://github.com/user-attachments/assets/43150907-39b8-41d0-b2b6-9dd2409319d5)
+![image](https://github.com/user-attachments/assets/82108144-67c5-41c4-a703-044aad1ae22a)
 
 ## 2. Influencers with highest average engagement.
 
@@ -603,7 +622,7 @@ order by
 
 Output
 
-![image](https://github.com/user-attachments/assets/3b01c098-fd1f-4a86-86ba-244073057d7b)
+![image](https://github.com/user-attachments/assets/77459a83-d9a3-4b20-805d-596f4ae3708b)
 
 ## 3. Influencers with highest engagament rate. 
 
@@ -692,8 +711,7 @@ order by
 ```
 Output
 
-![image](https://github.com/user-attachments/assets/bad8939c-2481-4b2b-8b41-c6cee3e5aa9a)
-
+![image](https://github.com/user-attachments/assets/d7d8c0d1-0a99-456e-a30a-29c4e992db4c)
 
 ## Discovery
 
