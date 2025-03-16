@@ -290,7 +290,9 @@ from
     instagrammers;
 ```
 
-![image](https://github.com/user-attachments/assets/32b3acd2-f136-45a4-b13d-964e605932d6)
+### Output
+
+![image](https://github.com/user-attachments/assets/7999e88a-a275-4c4f-a1fa-2bae9c4ea72e)
 
 
 ## Column count check
@@ -307,7 +309,9 @@ where
    	and table_schema = 'public';
 ```
 
-![image](https://github.com/user-attachments/assets/53ba0c17-6eae-476d-a87d-d73d18c4d603)
+### Output
+
+![image](https://github.com/user-attachments/assets/2572ebf1-48fc-485a-a3a3-81bf31ac256c)
 
 ## Data type check
 
@@ -323,7 +327,9 @@ where
     TABLE_NAME = 'instagrammers';
 ```
 
-![image](https://github.com/user-attachments/assets/bc6d8a93-d066-4f7b-b30e-2973170fe665)
+### Output
+
+![image](https://github.com/user-attachments/assets/30331161-b09b-4fd0-a434-a3d78d14b5f4)
 
 ## Duplicate count check
 
@@ -336,7 +342,9 @@ FROM
     instagrammers;
 ```
 
-![image](https://github.com/user-attachments/assets/2d97511d-f208-4283-9dfe-9bf2b94275d0)
+### Output
+
+![image](https://github.com/user-attachments/assets/b8c94806-6c75-4f43-8c5a-38e7d5f6cb9e)
 
 # Visualization
 
@@ -396,8 +404,7 @@ For this analysis, we're going to focus on the questions below to get the inform
 3. Which 3 influencers have the highest engagement rates?
 
 
-
-1. Who are the top 10 Instagram influencers with the highest number of followers?
+### 1. Who are the top 10 Instagram influencers with the highest number of followers?
 
 | Rank | Influencer Name   | Total Followers (M) |
 |-----:|-------------------|---------------------|
@@ -412,7 +419,7 @@ For this analysis, we're going to focus on the questions below to get the inform
 | 9    | iamcardib         | 137.30              |
 | 10   | gigihadid         | 74.90               |
 
-2. Which 3 influencers have the highest average engagement?
+### 2. Which 3 influencers have the highest average engagement?
 
 | Rank | Influencer Name | Avg Engagement (M) |
 |-----:|-----------------|--------------------|
@@ -420,7 +427,7 @@ For this analysis, we're going to focus on the questions below to get the inform
 | 2    | kendalljenner   | 3.00               |
 | 3    | harrystyles     | 2.10               |
 
-3. Which 3 influencers have the highest engagement rates?
+### 3. Which 3 influencers have the highest engagement rates?
 
 | Rank | Influencer Name | Engagement Rate |
 |-----:|-----------------|-----------------|
@@ -454,7 +461,7 @@ Campaign Cost (one-time fee) = $75,000
 
 AVG Engagement per Post = 1,200,000
 
-Potential Product Sales per Interaction = AVG Engagement per Post x Conversion Rate -> 1,200,000 x 0.02 = 24,000
+Potential Product Sales per Interaction = AVG Authentic Engagement per Post x Conversion Rate -> 1,200,000 x 0.02 = 24,000
 
 Potential Revenue per Post = Potential Product Sales x Product Cost -> 24,000 x $300 = $7,200,000
 
@@ -464,7 +471,7 @@ Net Profit = Potential Revenue per Post - Campaign Cost = $7,200,000 - $75,000 =
 
 AVG Engagement per Post = 1,400,000
 
-Potential Product Sales per Interaction = AVG Engagement per Post x Conversion Rate -> 1,400,000 x 0.02 = 28,000
+Potential Product Sales per Interaction = AVG Authentic Engagement per Post x Conversion Rate -> 1,400,000 x 0.02 = 28,000
 
 Potential Revenue per Post = Potential Product Sales x Product Cost -> 28,000 x 300 = $8,400,000 
 
@@ -474,7 +481,7 @@ Net Profit = Potential Revenue per Post - Campaign Cost = 8,400,000 - 75,000 = 8
 
 AVG Engagement per Post = 1,700,000
 
-Potential Product Sales per Interaction = AVG Engagement per Post x Conversion Rate -> 1,700,000 x 0.02 = 34,000
+Potential Product Sales per Interaction = AVG Authentic Engagement per Post x Conversion Rate -> 1,700,000 x 0.02 = 34,000
 
 Potential Revenue per Post = Potential Product Sales x Product Cost -> 34,000 x $300 = $10,200,000 
 
@@ -502,9 +509,9 @@ WITH top_influ_by_followers AS (
 )
 select
 	name,
-	authentic_engagement,
-	(authentic_engagement * 0.02) as potential_units_per_interactions,
-	(authentic_engagement * 0.02 * 300) as potential_revenue_per_post,
+	authentic_engagement as avg_authentic_engagement_pr_post,
+	(authentic_engagement * 0.02) as potential_units_pr_interactions,
+	(authentic_engagement * 0.02 * 300) as potential_revenue_pr_post,
 	(authentic_engagement * 0.02 * 300 - 75000) as net_profit
 from
 	top_influ_by_followers
@@ -516,7 +523,7 @@ order by
 
 Output
 
-![image](https://github.com/user-attachments/assets/28598d2b-b281-48fe-959d-d6c8aced0fb6)
+![image](https://github.com/user-attachments/assets/43150907-39b8-41d0-b2b6-9dd2409319d5)
 
 ## 2. Influencers with highest average engagement.
 
@@ -534,7 +541,7 @@ Campaign Cost (3-month contract) = $140,000
 
 AVG Engagement per Post = 4,300,000
 
-Potential Product Sales per Interaction = AVG Engagement per Post x Conversion Rate -> 4,300,000 x 0.02 = 86,000
+Potential Product Sales per Interaction = AVG Authentic Engagement per Post x Conversion Rate -> 4,300,000 x 0.02 = 86,000
 
 Potential Revenue per Post = Potential Product Sales x Product Cost -> 86,000 x $300 = $25,800,000
 
@@ -544,7 +551,7 @@ Net Profit = Potential Revenue per Post - Campaign Cost = $25,800,000 - $140,000
 
 AVG Engagement per Post = 3,000,000
 
-Potential Product Sales per Interaction = AVG Engagement per Post x Conversion Rate -> 3,000,000 x 0.02 = 60,000
+Potential Product Sales per Interaction = AVG Authentic Engagement per Post x Conversion Rate -> 3,000,000 x 0.02 = 60,000
 
 Potential Revenue per Post = Potential Product Sales x Product Cost -> 60,000 x $300 = $18,000,000 
 
@@ -554,7 +561,7 @@ Net Profit = Potential Revenue per Post - Campaign Cost = $18,000,000 - $140,000
 
 AVG Engagement per Post = 2,100,000
 
-Potential Product Sales per Interaction = AVG Engagement per Post x Conversion Rate -> 2,100,000 x 0.02 = 42,000
+Potential Product Sales per Interaction = AVG Authentic Engagement per Post x Conversion Rate -> 2,100,000 x 0.02 = 42,000
 
 Potential Revenue per Post = Potential Product Sales x Product Cost -> 42,000 x $300 = $12,600,000 
 
@@ -565,7 +572,7 @@ Best option from category: Zendaya
 SQL query
 
 ```sql
--- Top 3 by avg authentic engagement Analysis
+-- Top 3 by Avg Authentic Engagement Analysis
  
 -- Capmpaign Idea = Influencer Marketing
 -- The conversion rate 0.02
@@ -582,9 +589,9 @@ WITH top_influ_by_eng AS (
 )
 select
 	name,
-	authentic_engagement,
-	(authentic_engagement * 0.02) as potential_units_per_interactions,
-	(authentic_engagement * 0.02 * 300) as potential_revenue_per_post,
+	authentic_engagement as avg_authentic_engagement_pr_post,
+	(authentic_engagement * 0.02) as potential_units_pr_interactions,
+	(authentic_engagement * 0.02 * 300) as potential_revenue_pr_post,
 	(authentic_engagement * 0.02 * 300 - 140000) as net_profit
 from
 	top_influ_by_eng
@@ -596,7 +603,7 @@ order by
 
 Output
 
-![image](https://github.com/user-attachments/assets/1a3b7173-691e-4480-a718-68b7d6aa1830)
+![image](https://github.com/user-attachments/assets/3b01c098-fd1f-4a86-86ba-244073057d7b)
 
 ## 3. Influencers with highest engagament rate. 
 
@@ -616,7 +623,7 @@ Number of Posts = 11
 
 AVG Engagement per Post = 695,700
 
-Potential Product Sales per Interaction = AVG Engagement per Post x Conversion Rate -> 695,700 x 0.02 = 13,914
+Potential Product Sales per Interaction = AVG Authentic Engagement per Post x Conversion Rate -> 695,700 x 0.02 = 13,914
 
 Potential Revenue per Post = Potential Product Sales x Product Cost -> 13,914 x $300 = $4,174,200
 
@@ -628,7 +635,7 @@ Total Net Profit = Net Profit x Number of Posts -> $4,166,700 x 11 = $45,833,700
 
 AVG Engagement per Post = 831,000 
 
-Potential Product Sales per Interaction = AVG Engagement per Post x Conversion Rate -> 831,000 x 0.02 = 16,620
+Potential Product Sales per Interaction = AVG Authentic Engagement per Post x Conversion Rate -> 831,000 x 0.02 = 16,620
 
 Potential Revenue per Post = Potential Product Sales x Product Cost -> 16,620 x $300 = $4,986,000
 
@@ -640,7 +647,7 @@ Total Net Profit = Net Profit x Number of Posts -> $4,978,500 x 11 = $54,763,500
 
 AVG Engagement per Post = 620,000
 
-Potential Product Sales per Interaction = AVG Engagement per Post x Conversion Rate ->  620,000 x 0.02 = 12,400
+Potential Product Sales per Interaction = AVG Authentic Engagement per Post x Conversion Rate ->  620,000 x 0.02 = 12,400
 
 Potential Revenue per Post = Potential Product Sales x Product Cost -> 12,400 x $300 = $3,720,000
 
@@ -671,10 +678,10 @@ with top_influ_by_eng_rate as (
 )
 select
 	name,
-	authentic_engagement,
-	(authentic_engagement * 0.02) as potential_units_per_interactions,
-	(authentic_engagement * 0.02 * 300) as potential_revenue_per_post,
-	(authentic_engagement * 0.02 * 300 - 7500) as net_profit_per_post,
+	authentic_engagement as avg_authentic_engagement_pr_post,
+	(authentic_engagement * 0.02) as potential_units_pr_interactions,
+	(authentic_engagement * 0.02 * 300) as potential_revenue_pr_post,
+	(authentic_engagement * 0.02 * 300 - 7500) as net_profit_pr_post,
 	((authentic_engagement * 0.02 * 300 - 7500) * 11) as total_net_profit
 from
 	top_influ_by_eng_rate
@@ -685,7 +692,8 @@ order by
 ```
 Output
 
-![image](https://github.com/user-attachments/assets/4232db56-d436-47b9-8fcc-d95ce0941294)
+![image](https://github.com/user-attachments/assets/bad8939c-2481-4b2b-8b41-c6cee3e5aa9a)
+
 
 ## Discovery
 
