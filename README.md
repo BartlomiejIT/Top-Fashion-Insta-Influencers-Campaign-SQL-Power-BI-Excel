@@ -389,13 +389,12 @@ RETURN DIVIDE(TotalEngagement, TotalFollowers, 0) * 100
 
 For this analysis, we're going to focus on the questions below to get the information we need for our marketing client -
 
-Here are the key questions we need to answer for our marketing client:
-
 1. Who are the top 10 Instagram influencers with the highest number of followers?
 
 2. Which 3 influencers have the highest average engagement?
 
 3. Which 3 influencers have the highest engagement rates?
+
 
 
 1. Who are the top 10 Instagram influencers with the highest number of followers?
