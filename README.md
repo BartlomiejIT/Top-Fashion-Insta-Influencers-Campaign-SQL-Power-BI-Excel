@@ -62,7 +62,7 @@ We need data on the top US Instagrammers in 2024 that includes their
 - audience country
 - authentic engagement
 
-- Where is the data coming from? The data is sourced from Kaggle (an Excel extract), [see here to find it]((https://www.kaggle.com/datasets/syedjaferk/top-1000-instagrammers-world-cleaned)).
+- Where is the data coming from? The data is sourced from Kaggle (an Excel extract), [see here to find it](https://www.kaggle.com/datasets/syedjaferk/top-1000-instagrammers-world-cleaned).
 
 # Stages
 
