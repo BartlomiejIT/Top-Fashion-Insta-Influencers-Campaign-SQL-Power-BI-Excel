@@ -763,7 +763,7 @@ We'll have conversations with the marketing client to forecast what they also ex
 
 Once we observe we're hitting the expected key stages, we'll advance with potential partnerships with **Kendal Jenner**, **Angus Cloud** and **Kim Kardashian** instagrammers in the future.
 
-- What stepds do we take to implement the recommended decisions effectively?
+- What steps do we take to implement the recommended decisions effectively?
 
 Reach out to the teams behind each of these profiles, starting with **Zendaya**.
 
