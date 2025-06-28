@@ -171,7 +171,6 @@ Below is a table outlining the constraints on our cleaned dataset:
 | Number of Rows      | 875         |
 | Number of Columns   | 5           |
 
-And here 
 
 And here is a tabular representation of the expected schema for the clean data:
 
